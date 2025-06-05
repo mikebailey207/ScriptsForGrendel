@@ -1,19 +1,12 @@
 Since you mentioned enjoying Don't Drink and Dive — and because it’s a game I’m particularly proud of — I’ve included the scripts for the harpoon and rock-dragging mechanics, as well as the one controlling the first boss (McBandito Pike).
 
-These were all written during the week-long jam, and I haven’t changed anything since submission, aside from removing unused code. 
-I know there are parts that could be structured or optimized better, and I’ve deleted comments from the jam and added comments specific to what I would change if coding in a studio setting, 
-but I thought it would be more honest to share them as they are to show how I work under pressure. 
-It is very much 'it works and it is bug free so on to the next feature' kind of coding, that would be neater and better optimized in a studio setting.
+All of these were written during the one-week jam. I’ve only cleaned up unused code, and while I know some areas could be better structured or optimized, I chose to leave the code as-is to give you a realistic sense of how I work under pressure. It’s very much “make it work, make it bug-free, move on” — the kind of approach necessary in a jam but which I understand needs refinement in a studio setting. I’ve added a few comments to highlight what I’d improve in a more formal context.
 
-I have also added the GameManager singleton from The Secret Scoffer of Saffron Walden. 
-My personal favourite of the games I've made (that finished 6th out of 521 entries in the GitHub GameOff). 
-This is just to show that I use singletons, which I obviously reference from other scripts, and also how I (in this case) handle saving and loading. 
-Here I am using PlayerPrefs as it was sufficient for the purposes of the jam. 
-I am aware that it would be more robust to use something like json in a more formal setting to store and load this info. 
-Again, this would be far better optimized if not in a game jam setting where I was rushing to add as many features as possible in a short amount of time, 
-and I have just left it as it was when the jam was submitted. 
+I’ve also included the GameManager singleton from The Secret Scoffer of Saffron Walden — a personal favourite that placed 6th out of 521 in GitHub’s GameOff. It shows how I approach saving/loading (in this case via PlayerPrefs, which was sufficient for the jam, though I’d use JSON or a more robust method in production).
 
-In summary then, I am aware that this may scream 'jam code', 
+In short, while this may read as “jam code,” I’m fully aware of the best practices I’m bypassing here. My jam approach prioritizes polish, stability, and rapid feature delivery. In a studio context, my focus would be clean, modular, and maintainable code from the outset.
+
+Looking forward to hearing your thoughts!
 but I assure you that I know the rules of best practice that I am breaking here. 
 When writing this code it was for my eyes only, and I always code in game jams in such a way that the game is bug free, 
 and plays cleanly and fluidly, and if the code is fully functional in that sense then I leave it as is. 
