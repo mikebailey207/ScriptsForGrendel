@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;   
-
+//GameManager class. Mainly used to handle saving and loading of the game. These are called automatically at the end of each day after you've spoken 
+//to Doris. There is a fair bit of stuff that should have its own class, largely Bard related stuff, but this is how it was at the end of the game jam.
 public class GameManager : MonoBehaviour
 {
     public GameObject continueButton;
@@ -202,10 +203,7 @@ public class GameManager : MonoBehaviour
         tshirtsText.text = "";
         mouseClickSound = GetComponent<AudioSource>();
   
-        if (speedrun && speedrunTimerText != null)
-        {
-  
-        }
+    
         if (PlayerPrefs.HasKey("Day"))
         {
             continueButton.SetActive(true);
@@ -241,7 +239,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("OutsidePub");
         }
         
-        moneyText.text = "£" + money.ToString("F2");
+        moneyText.text = "Â£" + money.ToString("F2");
         dayText.text = "Day " + day;
         if (tShirts < 6) tshirtsText.text = "Win all t-shirts (new life goal) " + tShirts + "/6";
         else if (tShirts >= 6)
