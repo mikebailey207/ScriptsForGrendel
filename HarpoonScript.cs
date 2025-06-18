@@ -174,8 +174,7 @@ public class HarpoonScript : MonoBehaviour
             {           
                 GameObject particles = Resources.Load<GameObject>("BloodParticles");
                 Instantiate(particles, collision.gameObject.transform.position, Quaternion.identity);
-                OneHeartInFive(collision.gameObject);
-    
+   
                 Destroy(collision.gameObject);
             }
         }
